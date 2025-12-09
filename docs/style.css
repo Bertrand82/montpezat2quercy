@@ -1,204 +1,166 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    background: #f7f7f7;
-    color: #252525;
+:root{
+  --green:#5d7c2e;
+  --accent:#8aa33b;
+  --muted:#6b6b6b;
+  --bg:#fbfbfb;
+  --max-width:1100px;
 }
 
-.header {
-    background: linear-gradient(180deg, #a5cf64 0%, #f7f7f7 80%);
-    text-align: center;
-    position: relative;
-    padding: 30px 10px 10px 10px;
+*{box-sizing:border-box}
+body{
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#222;
+  margin:0;
+  background:var(--bg);
+  line-height:1.5;
 }
 
-.blason {
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    width: 80px;
+.site-header{
+  background:white;
+  padding:18px 12px;
+  text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.04);
+}
+.title{
+  font-family: "Montserrat", sans-serif;
+  font-weight:800;
+  letter-spacing:2px;
+  margin:0;
+  color:var(--green);
+  font-size:2.4rem;
+  text-transform:uppercase;
 }
 
-.main-title {
-    color: #18823a;
-    font-size: 2.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 0 0 10px 0;
-    text-shadow: 1px 1px 2px #e0e0e0;
+.container{
+  max-width:var(--max-width);
+  margin:24px auto;
+  padding:0 18px 60px;
 }
 
-.team-section {
-    background: #fff;
-    border-radius: 0 0 18px 18px;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    padding: 30px 30px 15px 30px;
+/* HERO */
+.hero{
+  position:relative;
+  margin-bottom:18px;
+}
+.hero-img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+  border:6px solid #fff;
 }
 
-.equipe-img {
-    width: 100%;
-    max-height: 260px;
-    object-fit: cover;
-    border-radius: 18px;
-    margin-bottom: 15px;
-    border: 3px solid #a5cf64;
+/* crest / page 2 image small in corner */
+.crest{
+  position:absolute;
+  right:18px;
+  top:-22px;
+  width:92px;
+  height:auto;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  background:linear-gradient(180deg,#fff0,#fff);
 }
 
-.team-list {
-    font-size: 1rem;
-    margin-bottom: 18px;
+/* Intro */
+.intro{
+  background:white;
+  margin-top:18px;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.04);
 }
-
-.slogan {
-    background: #f4ffde;
-    border-left: 7px solid #a5cf64;
-    margin: 22px 0 17px 0;
-    padding: 16px 25px;
-    border-radius: 8px;
+.caption.small{
+  font-size:0.88rem;
+  color:var(--muted);
+  margin:0 0 10px 0;
 }
-
-.slogan-main {
-    color: #18823a;
-    font-size: 1.6rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 7px;
+.intro h2{
+  color:var(--green);
+  margin:6px 0 10px;
+  font-family:"Montserrat",sans-serif;
 }
-
-.main-section {
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    padding: 30px 30px 30px 30px;
+.motto{
+  font-family:"Montserrat",sans-serif;
+  color:var(--accent);
+  font-size:1.35rem;
+  text-align:center;
+  margin:12px 0;
+  font-weight:700;
 }
+.lead{font-weight:600;color:#333}
 
-.intro-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 28px;
-    margin-bottom: 30px;
+/* Columns */
+.columns{
+  display:flex;
+  gap:18px;
+  margin-top:18px;
+  align-items:flex-start;
 }
-
-.intro-photo img {
-    width: 120px;
-    border-radius: 12px;
-    border: 2px solid #a5cf64;
+.col{
+  background:white;
+  padding:16px;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.04);
 }
+.main-col{flex:2}
+.side-col{flex:1}
 
-.intro-text {
-    flex: 1;
-    font-size: 1.1rem;
-    color: #26370c;
+.main-col h4{
+  margin-top:0;
+  color:var(--green);
+  font-family:"Montserrat",sans-serif;
 }
-
-.highlight {
-    color: #18823a;
-    font-weight: bold;
+.main-col h5{
+  margin-bottom:6px;
+  margin-top:12px;
+  color:var(--green);
+  font-size:1rem;
 }
+.main-col ul{padding-left:1.05rem;color:#222}
 
-.signature {
-    margin-top: 18px;
-    color: #252525;
-    font-size: 1rem;
+/* Candidate block */
+.candidate{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:8px;
 }
-
-.engagement-section h2 {
-    color: #18823a;
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.7rem;
-    letter-spacing: 1px;
+.candidate-pic{
+  width:64px;
+  height:64px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#eee;
+  border:2px solid #fff;
 }
+.muted{color:var(--muted);font-size:0.9rem}
 
-.pillars-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 28px 0;
-}
+/* participative box */
+.participative h5{color:var(--green);margin-bottom:6px}
+.participative h6{margin-top:12px;margin-bottom:6px}
+.contact p{margin:6px 0}
 
-.pillar-title {
-    display: block;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin: 18px 0 6px 0;
-}
+/* legal */
+.legal{margin-top:14px;text-align:center}
+.smallprint{font-size:0.82rem;color:var(--muted)}
 
-.green {
-    color: #18823a;
-}
-
-.pillars-list ul {
-    margin: 0 0 0 24px;
-    padding: 0 0 10px 0;
-    font-size: 1rem;
-}
-
-.participative-section h3 {
-    color: #18823a;
-    font-size: 1.15rem;
-    margin-top: 25px;
-}
-
-.participative-section p {
-    margin-top: 10px;
-}
-
-.footer {
-    background: #a5cf64;
-    padding: 25px 0 20px 0;
-    text-align: center;
-    border-top: 5px solid #18823a;
-}
-
-.contact-box {
-    background: #fff;
-    display: inline-block;
-    padding: 18px 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-}
-
-.contact-box strong {
-    color: #18823a;
-    font-size: 1.12rem;
-}
-
-.email-link, .site-link {
-    color: #18823a;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.email-link:hover, .site-link:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons img {
-    width: 38px;
-    margin: 0 10px;
-    vertical-align: middle;
+/* Footer */
+.site-footer{
+  text-align:center;
+  color:#666;
+  padding:22px 10px;
+  font-size:0.9rem;
 }
 
 /* Responsive */
-@media (max-width: 700px) {
-    .main-section, .team-section {
-        padding: 18px 7px;
-    }
-    .intro-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    .blason {
-        position: static;
-        display: block;
-        margin: 0 auto 12px auto;
-    }
+@media (max-width:900px){
+  .columns{flex-direction:column}
+  .crest{right:12px; top:-12px; width:76px}
+  .title{font-size:1.9rem}
+}
+@media (max-width:420px){
+  .title{font-size:1.5rem}
+  .motto{font-size:1.05rem}
 }
