@@ -164,3 +164,11 @@ body{
   .title{font-size:1.5rem}
   .motto{font-size:1.05rem}
 }
+
+/* Petites icônes image fournies */
+.icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: inline-block;
+}
