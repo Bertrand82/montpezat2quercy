@@ -20,6 +20,10 @@ body{
   padding:18px 12px;
   text-align:center;
   box-shadow:0 2px 6px rgba(0,0,0,0.04);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
 }
 .title{
   font-family: "Montserrat", sans-serif;
@@ -53,14 +57,10 @@ body{
 
 /* crest / page 2 image small in corner */
 .crest{
-  position:absolute;
-  right:18px;
-  top:-22px;
   width:2.4rem;
   height:auto;
   border-radius:10px;
   box-shadow:0 6px 18px rgba(0,0,0,0.12);
-  background:linear-gradient(180deg,#fff0,#fff);
 }
 
 /* Intro */
